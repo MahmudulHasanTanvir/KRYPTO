@@ -178,22 +178,16 @@
 </body>
 </html>
 
+
 <script>
+  function showMenu() {
+    var navLinks = document.getElementById("navLinks");
+    navLinks.style.right = "0";
+  }
 
-    var navMenu = document.getElementById('nav-menu'),
-  navToggle = document.getElementById('nav-toggle'),
-  navClose = document.getElementById('nav-close');
-
-/*============== Show Nav ============*/
-
-navToggle.addEventListener('click', function(){
-  navMenu.classList.add('show-menu')
-});
-
-/*============== Hide Nav ============*/
-
-navClose.addEventListener('click', function() {
-  navMenu.classList.remove('show-menu')
-});
-
+  function hideMenu() {
+    var navLinks = document.getElementById("navLinks");
+    navLinks.style.right = "-200px";
+  }
 </script>
+
