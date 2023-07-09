@@ -14,29 +14,19 @@
 
 <body>
   <section class="header">
-    <nav class="nav container">
-       <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-             <li class="nav__item">
-                <a href="#home" class="nav__link" id="link-close">about</a>
-             </li>
-             <li class="nav__item">
-                <a href="#about" class="nav__link" id="link-close">pricing</a>
-             </li>
-             <li class="nav__item">
-                <a href="#skills" class="nav__link" id="link-close">contact</a>
-             </li>
-             <li class="nav__item">
-                <a href="#services" class="nav__link" id="link-close">buy NFT's</a>
-             </li>
-             </li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
-       </div>
-       <div class="nav__btns">
-          <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
-       </div>
-    </nav>
+        <nav>
+        <a href="index.html" class="brand">KRYPTO</a>
+          <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">about</a></li>
+              <li><a href="am.html">pricing</a></li>
+              <li><a href="photos.html">contact</a></li>
+              <li><a href="ms.html">buy NFT's</a></li>
+            </ul>
+          </div>
+          <i class="fas fa-align-justify" onclick="showMenu()"></i>
+        </nav>
     <div class="container">
       <div class="subdiv">
         <h1 class="ttf">Discover
@@ -207,9 +197,3 @@ navClose.addEventListener('click', function() {
 });
 
 </script>
-        <!-- <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul> -->
