@@ -12,7 +12,7 @@ body {
     background: #010922;
     background-image: url(1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 nav {
@@ -74,6 +74,14 @@ nav {
     font-size: 1.5vw;
 }
 
+nav .fas{
+    display: block587;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
 .betton {
     display: flex;
 }
@@ -130,7 +138,7 @@ a {
     justify-content: center;
 }
 
-.subdiv{
+.subdiv {
     width: 51%;
 }
 
@@ -252,9 +260,10 @@ a {
     font-size: 1.1vw;
 }
 
-.customers h3{ 
+.customers h3 {
     font-size: 1.5vw;
 }
+
 .imag {
     border-radius: 50%;
     margin-top: -118px;
@@ -301,7 +310,7 @@ ul li {
 }
 
 ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.8vw;
 
@@ -363,7 +372,7 @@ button {
     color: #fff;
 }
 
-.butn_ss{
+.butn_ss {
     margin-left: 5%;
 }
 
@@ -415,6 +424,13 @@ button {
     background-color: #7a7ac9;
 
 }
+label button{
+    cursor: pointer;
+}
+nav .fas {
+  display: none;
+}
+
 
 
 
@@ -467,34 +483,42 @@ button {
 
 
 @media screen and (max-width:840px) {
-    .container, .analytics, .app, .testimonials{
+
+    body {
+        background-size: 100vw 130vw;
+    }
+
+    .container,
+    .analytics,
+    .app,
+    .testimonials {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .container{
+    .container {
         margin-top: 20vw;
     }
 
-    nav{
+    nav {
         justify-content: center;
     }
 
-    nav .brand{
+    nav .brand {
         font-size: 5.8vw;
     }
 
-    .nav-links{
+    .nav-links {
         display: none;
     }
 
-    .analytics{
+    .analytics {
         margin-top: 27%;
         margin-bottom: 27%;
     }
 
-    .fft{
+    .fft {
         width: 184%;
         margin-top: 10%;
         margin-bottom: 10%;
@@ -502,33 +526,35 @@ button {
 
     }
 
-    .rrf{
+    .rrf {
         font-size: 4.5vw;
     }
 
-    .ffr{
+    .ffr {
         font-size: 10.1vw;
     }
 
-    .frf{
+    .frf {
         font-size: 3.5vw;
         font-family: 'Roboto', sans-serif;
         margin-top: 5%;
         margin-bottom: 5%;
     }
 
-    .box{
+    .box {
         border-radius: 5px;
     }
 
-    .subdiv, .txt, .mm{
+    .subdiv,
+    .txt,
+    .mm {
         order: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .container .subdiv h1{
+    .container .subdiv h1 {
         width: 191%;
         font-size: 15vw;
     }
@@ -547,73 +573,115 @@ button {
         display: block;
     }
 
-    .customers{
+    .customers {
         width: 49.4vw;
         border-radius: 15px;
     }
 
-    .butn{
+    .butn {
         width: 44vw;
         height: 13.7vw;
     }
 
-    .butn a{
+    .butn a {
         font-size: 5.7vw;
     }
 
-    .sublink ul li{
+    .sublink ul li {
         padding: 0;
     }
 
-    .ft{
+    .ft {
         display: none;
     }
 
-    .kk{
+    .kk {
         width: 48vw;
     }
 
-    .kk a{
+    .kk a {
         font-size: 4vw;
+    }
+
+    .customers p {
+        font-size: 3.1vw;
+    }
+
+    .customers h3 {
+        font-size: 4.5vw;
     }
     
-    .customers p {
-    font-size: 3.1vw;
-    }
-    .customers h3{ 
-        font-size: 4.5vw;
-    }
-
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -2000zpx;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: rgba(119, 47, 47, 0.4);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  nav .fas {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
 }
+
 @media screen and (max-width:420px) {
-    .container, .analytics, .app, .testimonials{
+
+    .container,
+    .analytics,
+    .app,
+    .testimonials {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .container{
-        margin-top: 20vw;
+    .container {
+        margin-top: 16vw;
     }
 
-    nav{
+    nav {
         justify-content: center;
     }
 
-    nav .brand{
+    nav .brand {
         font-size: 5.8vw;
     }
 
-    .nav-links{
+    .nav-links {
         display: none;
     }
 
-    .analytics{
-        margin-top: 27%;
+    .analytics {
+        margin-top: 31%;
         margin-bottom: 27%;
     }
 
-    .fft{
+    .fft {
         width: 184%;
         margin-top: 10%;
         margin-bottom: 10%;
@@ -621,33 +689,43 @@ button {
 
     }
 
-    .rrf{
+    .customers p {
+        font-size: 4.1vw;
+    }
+
+    .rrf {
         font-size: 4.5vw;
     }
 
-    .ffr{
+    .ffr {
         font-size: 10.1vw;
     }
 
-    .frf{
+    .frf {
         font-size: 3.5vw;
         font-family: 'Roboto', sans-serif;
         margin-top: 5%;
         margin-bottom: 5%;
     }
 
-    .box{
+    .box {
         border-radius: 5px;
     }
 
-    .subdiv, .txt, .mm{
+    .box .rff {
+        font-size: 3.5vw;
+    }
+
+    .subdiv,
+    .txt,
+    .mm {
         order: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .container .subdiv h1{
+    .container .subdiv h1 {
         width: 191%;
         font-size: 15vw;
     }
@@ -666,35 +744,156 @@ button {
         display: block;
     }
 
-    .customers{
-        width: 49.4vw;
+    .customers {
+        width: 80.4vw;
         border-radius: 15px;
     }
 
-    .butn{
+    .butn {
         width: 44vw;
         height: 13.7vw;
     }
 
-    .butn a{
+    .butn a {
         font-size: 5.7vw;
     }
 
-    .sublink ul li{
+    .sublink ul li {
         padding: 0;
     }
 
-    .ft{
+    .ft {
         display: none;
     }
 
-    .kk{
+    .kk {
         width: 48vw;
     }
 
-    .kk a{
+    .kk a {
         font-size: 4vw;
- 
+
     }
 
-}
+    input[type="text"] {
+        font-size: 4.1vw;
+        width: 255px;
+    }
+
+    label button {
+        font-size: 3.1vw;
+    }
+
+    .xxx {
+        padding-bottom: 0;
+    }
+
+
+    .link ul li a {
+        font-size: 2.5vw;
+    }
+
+    .krypto .main_li {
+        font-size: 3.2vw;
+    }
+
+    .ghg {
+        font-size: 4.5vw;
+    }
+
+    .testimonials {
+        margin-top: 10%;
+    }
+
+    .customers {
+        margin-top: 10%;
+    }
+
+    .man {
+        width: 18.7vw;
+    }
+
+    .first_women,
+    .sec_women {
+        width: 18.7vw;
+    }
+
+    .footer .box .butn a {
+        font-size: 3.7vw;
+    }
+}.nav {
+    max-width: 968px;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__logo,
+  .nav__toggle {
+    color: hsl(250deg, 8%, 15%);
+    font-weight: 500;
+  }
+  
+  .nav__logo:hover {
+    color: hsl(250deg, 69%, 61%);
+  }
+  
+  .nav__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .nav__toggle:hover {
+    color: hsl(250deg, 69%, 61%);
+  }
+  
+  @media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: hsl(250deg, 60%, 99%);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: 0.3s;
+    }
+  }
+  .nav__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+  
+  .nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.813rem;
+    color: hsl(250deg, 8%, 15%);
+    font-weight: 500;
+  }
+  .nav__link:hover {
+    color: hsl(250deg, 69%, 61%);
+  }
+  .nav__link .nav__icon {
+    font-size: 1.2rem;
+  }
+  
+  .nav__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: hsl(250deg, 69%, 61%);
+  }
+  .nav__close:hover {
+    color: hsl(250deg, 57%, 53%);
+  }
+  
+  /* show menu */
+  .show-menu {
+    bottom: 0;
+  }

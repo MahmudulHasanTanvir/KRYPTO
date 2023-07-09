@@ -6,21 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/b7ddd6d81f.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
   <title>KRYPTO NFT</title>
 </head>
 
 <body>
   <section class="header">
-    <nav>
-      <a href="index.html" class="brand">KRYPTO</a>
-      <div class="nav-links" id="navLinks">
-        <ul>
-          <li><a href="#">about</a></li>
-          <li><a href="#">pricing</a></li>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">buy NFT's</a></li>
-        </ul>
-      </div>
+    <nav class="nav container">
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+             <li class="nav__item">
+                <a href="#home" class="nav__link" id="link-close">about</a>
+             </li>
+             <li class="nav__item">
+                <a href="#about" class="nav__link" id="link-close">pricing</a>
+             </li>
+             <li class="nav__item">
+                <a href="#skills" class="nav__link" id="link-close">contact</a>
+             </li>
+             <li class="nav__item">
+                <a href="#services" class="nav__link" id="link-close">buy NFT's</a>
+             </li>
+             </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+       </div>
+       <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
+       </div>
     </nav>
     <div class="container">
       <div class="subdiv">
@@ -44,7 +59,7 @@
       </div>
       <div class="img">
         <img src="2.png" class="display">
-        <img src="Satoshi Coin.png" class="no_display" alt="">
+        <img src="Satoshi Coin.png" class="no_display">
       </div>
     </div>
     <div class="ft">
@@ -131,14 +146,21 @@
       <div class="link">
         <div class="sublink">
           <ul class="krypto">
-            <li class="frf main_li">Krypto</li>
+            <li class="frf">What We Do</li>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Buy Nfts</a></li>
             <li><a href="#">Sell Nfts</a></li>
           </ul>
           <ul class="Market">
-            <li class="frf">Market</li>
+            <li class="frf">Company</li>
+            <li><a href="#">Browse Nfts</a></li>
+            <li><a href="#">Buy Nfts</a></li>
+            <li><a href="#">Sell Nfts</a></li>
+          </ul>
+          </ul>
+          <ul class="support">
+            <li class="frf">Support</li>
             <li><a href="#">Browse Nfts</a></li>
             <li><a href="#">Buy Nfts</a></li>
             <li><a href="#">Sell Nfts</a></li>
@@ -153,16 +175,34 @@
           </ul>
 
         </div>
-        <div class="email">
-          <p class="frf xxx">Join Our Newsletter</p>
-          <label>
-            <input type="text" placeholder="Email Adress">
-            <button>Submit</button>
-          </label>
-        </div>
       </div>
     </div>
   </section>
 </body>
-
 </html>
+
+<script>
+
+    var navMenu = document.getElementById('nav-menu'),
+  navToggle = document.getElementById('nav-toggle'),
+  navClose = document.getElementById('nav-close');
+
+/*============== Show Nav ============*/
+
+navToggle.addEventListener('click', function(){
+  navMenu.classList.add('show-menu')
+});
+
+/*============== Hide Nav ============*/
+
+navClose.addEventListener('click', function() {
+  navMenu.classList.remove('show-menu')
+});
+
+</script>
+        <!-- <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul> -->
